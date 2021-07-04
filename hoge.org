@@ -7,6 +7,9 @@
 # TODO revenge
 # TODO really?
 ** section
+#+begin_comment
+Will this be registered as an issue?
+#+end_comment
 ** TODO fuga
 ** TODO how about this
 
