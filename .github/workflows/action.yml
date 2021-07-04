@@ -7,7 +7,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v1
       - name: "TODO to Issue"
-        if: contains(github.ref, 'camera_flash')
+        if: contains(github.ref, 'master')
         uses: "Rindrics/todo-to-issue-action@add-org"
         id: "todo"
         with:
