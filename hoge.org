@@ -4,6 +4,8 @@
 - fuga
 - タイ
 - イワシ
+- サンマ
+- サバ
 - ヒラメ
 - piyo
 # TODO: hoge
