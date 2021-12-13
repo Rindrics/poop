@@ -9,6 +9,8 @@
 - ヒラメ
 - タイ
 - スズキ
+- アジ干物
+- サバ文化干
 - piyo
 # TODO: hoge
 # TODO testing
