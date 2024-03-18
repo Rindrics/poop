@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Require Label Prefix Single
-        uses: Rindrics/require-label-prefix-single@v0.0.7
+        uses: Rindrics/require-label-prefix-single@v0.0.8
         with:
           PREFIX: size
           ADD_LABEL: true
