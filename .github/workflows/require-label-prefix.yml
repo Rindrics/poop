@@ -12,9 +12,10 @@ jobs:
 
     steps:
       - name: Require Label Prefix Single
-        uses: Rindrics/require-label-prefix-single@v0.0.12
+        uses: Rindrics/require-label-prefix-single@v0.0.13
         with:
           label_prefix: size
           add_label: true
           token: ${{ github.TOKEN }}
           default_label: size/needed
+          log_level: debug
