@@ -1,0 +1,20 @@
+name: Check Needed Labels on Issue Close
+
+on:
+  issues:
+    types:
+      - closed
+
+jobs:
+  check-label:
+    if: ${{ github.event_name != 'schedule' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "`size/` label"
+        uses: Rindrics/require-label-prefix@v0.0.7
+        with:
+          secret: ${{ github.TOKEN }}
+          prefix: size
+          addLabel: true
+          defaultLabel: "size/needed"
