@@ -16,5 +16,5 @@ jobs:
         with:
           prefix: size
           add_label: true
-          secret: ${{ github.TOKEN }}
+          token: ${{ github.TOKEN }}
           default_label: size/needed
