@@ -1,7 +1,7 @@
 name: Check Needed Labels on Issue Close
 
 on:
-  issues:
+  pull_request:
     types:
       - closed
 
