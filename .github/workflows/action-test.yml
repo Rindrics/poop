@@ -1,4 +1,4 @@
-name: Check Needed Labels on Issue Close
+name: Workflow for testing action
 
 on:
   push:
