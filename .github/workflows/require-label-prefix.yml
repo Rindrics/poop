@@ -1,21 +1,18 @@
 name: Check Needed Labels on Issue Close
 
 on:
-  pull_request:
-    types:
-      - closed
+  push:
+    branches:
+      - main
 
 jobs:
-  check-label:
-    if: ${{ github.event_name != 'schedule' }}
+  execute:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Require Label Prefix Single
-        uses: Rindrics/require-label-prefix-single@v1
+      - name: Execute Scripts GitHub Flow
+        uses: Rindrics/execute-scripts-github-flow@v0.0.1     
         with:
-          label_prefix: size
-          add_label: true
-          token: ${{ github.TOKEN }}
-          default_label: size/needed
-          log_level: debug
+          requiredLabel: needed-label
+          baseBranch: main
+          targetScriptListDir: scripts
