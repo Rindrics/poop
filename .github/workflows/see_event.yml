@@ -1,7 +1,10 @@
 name: Print Webhook Event
 
 on:
-  push
+  push:
+    paths:
+      - master
+  pull_request:
 
 jobs:
   print-event:
