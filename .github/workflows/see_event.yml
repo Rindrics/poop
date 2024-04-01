@@ -14,3 +14,5 @@ jobs:
         run: |
           echo "Event payload:"
           echo '${{ toJson(github.event) }}'
+          echo '${{ github.event_path }}'
+      
