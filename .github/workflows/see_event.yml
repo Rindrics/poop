@@ -1,0 +1,13 @@
+name: Print Webhook Event
+
+on:
+  push
+
+jobs:
+  print-event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Webhook Event
+        run: |
+          echo "Event payload:"
+          echo '${{ toJson(github.event) }}'
