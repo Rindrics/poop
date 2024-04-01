@@ -3,7 +3,7 @@ name: Workflow for testing action
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   execute:
@@ -16,5 +16,5 @@ jobs:
         uses: Rindrics/execute-scripts-github-flow@v0.0.1     
         with:
           requiredLabel: needed-label
-          baseBranch: main
+          baseBranch: master
           targetScriptListDir: scripts
