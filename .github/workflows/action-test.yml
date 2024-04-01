@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v4
+
       - name: Execute Scripts GitHub Flow
         uses: Rindrics/execute-scripts-github-flow@v0.0.1     
         with:
