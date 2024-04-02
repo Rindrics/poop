@@ -19,6 +19,9 @@ jobs:
         run: |
           echo '${{ github.event_path }}'
           cat '${{ github.event_path }}'
+
+      - name: Load from envvar directly
+        run: |
           echo $GITHUB_EVENT_PATH
           
       
