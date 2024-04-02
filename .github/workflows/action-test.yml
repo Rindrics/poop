@@ -1,9 +1,7 @@
 name: Workflow for testing action
 
 on:
-  push:
-    branches:
-      - master
+  pull_request
 
 jobs:
   execute:
@@ -13,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Execute Scripts GitHub Flow
-        uses: Rindrics/execute-scripts-github-flow@v0.0.2
+        uses: Rindrics/execute-scripts-github-flow@v0.0.3
         with:
           requiredLabel: needed-label
           baseBranch: master
