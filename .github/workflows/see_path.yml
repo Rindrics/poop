@@ -1,0 +1,14 @@
+name: see path
+
+on:
+  push:
+    paths:
+      - .github/workflows/see_path.yml
+    
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo $PATH
