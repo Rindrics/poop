@@ -14,6 +14,9 @@ jobs:
         run: |
           echo "Event payload:"
           echo '${{ toJson(github.event) }}'
+
+      - name: Print Webhook Event Path
+        run: |
           echo '${{ github.event_path }}'
           cat '${{ github.event_path }}'
           
