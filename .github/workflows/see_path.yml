@@ -11,4 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo $PATH
+      - run: |
+          echo $PATH
+          which git
+        
