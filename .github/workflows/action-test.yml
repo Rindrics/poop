@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Execute Scripts GitHub Flow
-        uses: Rindrics/execute-scripts-github-flow@v0.0.3
+        uses: Rindrics/execute-scripts-github-flow@v0.0.4
         with:
           requiredLabel: needed-label
           baseBranch: master
