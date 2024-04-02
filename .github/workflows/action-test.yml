@@ -1,7 +1,10 @@
 name: Workflow for testing action
 
 on:
-  pull_request
+  pull_request:
+    types:
+      - closed
+    
 
 jobs:
   execute:
